@@ -1,0 +1,148 @@
+* {
+    font-family:Lato;
+}
+
+h1, h2, h3, h4 {
+    text-align:center;
+}
+
+.background-image {
+    display:block;
+    width:100%;
+    height:100%;
+    padding-top:40px;
+    background-image: url(../img/index.jpg);
+    background-color: #000002;
+    background-repeat:no-repeat;
+    background-position:center bottom;
+    color:#fff;
+    padding-bottom:150px;
+}
+
+#genre-container {
+    min-height:90vh;
+}
+
+.background-image h1 {
+    text-shadow: 2px 2px #2e54ae;
+    color: #dbe0e8;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #040611;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.search-form, #fetching {
+    width: 695px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.search-form .btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    width: 100px;
+}
+
+label[for=q] {
+    margin-top: 2px;
+    float: left;
+    padding-left: 45px;
+    background: url(../img/youtube.png) no-repeat;
+    height: 30px;
+    position: relative;
+}
+
+footer {
+    background: #000;
+    color: #7f9cca;
+    padding: 30px;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer-sep {
+    width:60px;
+}
+
+.copyright {
+    margin:30px;
+    color: #777;
+}
+
+.row.genres a {
+    font-size: 150%;
+    text-shadow: 0px 4px 13px #5d30e4;
+}
+
+.row.genres {
+    margin-top:20px;
+}
+
+
+#fetching {
+    display:none;
+}
+
+#disco {
+    background: url(../img/disco.gif) no-repeat;
+    height: 96px;
+    width: 96px;
+    margin: auto;
+}
+
+.search-results {
+    background-color:#ffffff15;
+    padding-bottom:20px;
+}
+
+.similar-searches {
+    /* background-color:#b5d9f3; */
+    padding-bottom:20px;
+}
+
+.selected-video {
+   /* background-color:#e1f4fd; */
+   padding-bottom:20px;
+}
+
+#selected-video {
+    margin:auto;
+    width: 516px;
+}
+
+.feature-ref {
+    text-align:center;
+    margin: 10px;
+}
+
+.feature-ref a {
+    color: #fff;
+    text-decoration:underline;
+}
+
+#feature-tbl .first-row td {
+    color: #335bb7;
+}
+
+.up {
+    color: green;
+}
+
+.down {
+    color: red;
+}
+
+.center {
+    text-align: center;
+}
+
+.bottom-space {
+    margin-bottom:250px;
+}

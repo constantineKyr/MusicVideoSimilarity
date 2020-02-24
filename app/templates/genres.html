@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <div class="background-image">
+        <div class="container" id="genre-container">
+            <h1>Database Genres</h1>
+            <div class="row genres">
+            {% for genre in genres %}
+                {% if loop.index0 % 2 == 0 %}
+                    </div><div class="row genres">
+                {% endif %}
+                <div class="col-md-6 col-sm-12 text-center">
+                    <a href="{{ url_for('genre', genre=genre) }}">{{ genre }}</a>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

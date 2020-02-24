@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <div class="background-image">
+        <div class="container">
+            <h1>Music Video Similarity</h1>
+            <div class="row center search-form">
+                {% if form %}
+                    {{ wtf.quick_form(form, form_type='inline') }}
+                {% endif %}
+            </div>
+            <div class="row center" id="fetching">
+                <div id="disco"></div>
+                <p>Processing your request, please be patient..</p>
+            </div>
+            <div class="recent">
+                <h3>Recent Searches:</h3>
+                <div class="row">
+                {% for video in searches %}
+                    {% if loop.index0 % 2 == 0 %}
+                        </div><div class="row">
+                    {% endif %}
+                    <div class="col-md-6 col-sm-12">
+                    {% include '_video.html' %}
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block app_scripts %}
+    <script>
+        $('#submit').click(function(){
+           // $('.search-form').hide();
+            $('#fetching').show();
+        });
+    </script>
+{% endblock %}
+
